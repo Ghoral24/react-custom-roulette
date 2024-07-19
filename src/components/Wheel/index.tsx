@@ -36,6 +36,8 @@ import { PointerProps, WheelData } from './types';
 import WheelCanvas from '../WheelCanvas';
 
 interface Props {
+  width?: string;
+  height?: string;
   mustStartSpinning: boolean;
   prizeNumber: number;
   data: WheelData[];
@@ -68,6 +70,8 @@ const CONTINUE_SPINNING_TIME = 750;
 const STOP_SPINNING_TIME = 8000;
 
 export const Wheel = ({
+  width = '900',
+  height = '900',
   mustStartSpinning,
   prizeNumber,
   data,
@@ -282,8 +286,8 @@ export const Wheel = ({
         disableInitialAnimation={disableInitialAnimation}
       >
         <WheelCanvas
-          width="300"
-          height="300"
+          width={width}
+          height={height}
           data={wheelData}
           outerBorderColor={outerBorderColor}
           outerBorderWidth={outerBorderWidth}
