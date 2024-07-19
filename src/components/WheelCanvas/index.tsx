@@ -260,7 +260,7 @@ const WheelCanvas = ({
     drawWheel(canvasRef, data, drawWheelProps);
   }, [canvasRef, data, drawWheelProps, rouletteUpdater]);
 
-  return <WheelCanvasStyle ref={canvasRef} width={width} height={height} />;
+  return <WheelCanvasStyle ref={canvasRef} width="100" height="100" />;
 };
 
 export default WheelCanvas;
