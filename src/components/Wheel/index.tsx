@@ -282,8 +282,8 @@ export const Wheel = ({
         disableInitialAnimation={disableInitialAnimation}
       >
         <WheelCanvas
-          width="900"
-          height="900"
+          width="300"
+          height="300"
           data={wheelData}
           outerBorderColor={outerBorderColor}
           outerBorderWidth={outerBorderWidth}
