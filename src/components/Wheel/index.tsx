@@ -1,3 +1,4 @@
+/* eslint-disable no-empty */
 import React, { useEffect, useRef, useState } from 'react';
 import WebFont from 'webfontloader';
 
@@ -194,9 +195,7 @@ export const Wheel = ({
             setRouletteUpdater(!rouletteUpdater);
           },
         });
-      } catch (err) {
-        console.log('Error loading webfonts:', err);
-      }
+      } catch (err) {}
     } else {
       setIsFontLoaded(true);
     }
